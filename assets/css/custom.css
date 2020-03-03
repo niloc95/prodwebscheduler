@@ -1,0 +1,1053 @@
+/* ----------------------------------------------------------------------------
+ * @WebScheduler - Web Scheduler
+ * @package     @WebScheduler
+ * @author      SemeOnline(Pty)Ltd <info@semeonline.co.za>
+ * @copyright   Copyright (c) 2019, SemeOnline (Pty)Ltd
+ * @link        https://semeonline.co.za
+ * @since       v1.8
+
+ * ---------------------------------------------------------------------------- */
+
+
+
+.btn {
+
+
+  border: none;
+
+
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+
+
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+
+
+  border-radius: 0px;
+
+
+  /*background-color: #222;
+
+
+  padding: 8px;
+
+
+  color: #fff;
+
+
+  font-size: 12px;
+
+
+  font-weight: 400;
+
+
+  letter-spacing: 1px;
+
+
+
+
+
+  text-decoration: none;
+
+
+  text-align: center;*/
+
+
+}
+
+
+
+
+
+.btn-primary {
+
+
+    color: #ffffff;
+
+
+    border-radius: 0px;
+
+
+    background-color: #4a4a4a;
+
+
+ }
+
+
+
+
+
+.legend {
+
+
+    border-bottom: 0px solid #e5e5e5;
+
+
+}
+
+
+
+
+
+.installpara {
+
+
+  font-family: 'Roboto';
+
+
+  font-size: 1.2em;
+
+
+  font-weight: 400;
+
+
+  font-style: normal;
+
+
+  line-height: 1.6em;
+
+
+  letter-spacing: -0.02em;
+
+
+  color: #000;
+
+
+}
+
+
+
+
+
+.installheading {
+
+
+  font-family: 'Roboto';
+
+
+  font-size: 6em;
+
+
+  font-weight: 900;
+
+
+  font-style: normal;
+
+
+  line-height: 1.6em;
+
+
+  letter-spacing: -0.08em;
+
+
+  color: #000;
+
+
+}
+
+
+
+
+
+.install_sub_headings {
+
+
+  font-family: 'Roboto';
+
+
+  font-size: 3em;
+
+
+  font-weight: 700;
+
+
+  font-style: normal;
+
+
+  line-height: 1.6em;
+
+
+  letter-spacing: -0.08em;
+
+
+  color: #000;
+
+
+}
+
+
+
+
+
+.install_field_input_heading {
+
+
+  font-family: 'Roboto';
+
+
+  font-size: 1em;
+
+
+  text-transform: uppercase;
+
+
+  font-weight: 500;
+
+
+  font-style: normal;
+
+
+  line-height: 1.6em;
+
+
+  letter-spacing: -0.08em;
+
+
+  color: #000;
+
+
+}
+
+
+
+
+
+/*.form-control {
+
+
+  font-family: 'Roboto';
+
+
+  font-weight: 700;
+
+
+  font-style: normal;
+
+
+  line-height: 1.6em;
+
+
+  letter-spacing: -0.05em;
+
+
+  border: 2px solid rgba(168, 76, 50, 0.5);
+
+
+  padding: .25em .5em .3125em;
+
+
+  color: rgba(168, 76, 50, 0.5);
+
+
+  border-radius: .25em;
+
+
+  background: transparent;
+
+
+  transition: all .100s;
+
+
+
+
+
+}*/
+
+
+
+
+
+.bookdropdown {
+
+
+  font-family: 'Roboto';
+
+
+  text-align: left;
+
+
+  text-transform: capitalize;
+
+
+  width: 450px;
+  padding: 5px;
+
+
+  font-size: 16px;
+
+
+  font-weight: 400;
+
+
+  border: 0px;
+
+
+  border-color: black;
+
+
+  border-radius: 0px;
+
+
+  color: #666666;
+
+
+}
+
+
+
+
+
+.login-dark_sub {
+
+
+
+  font-family: 'Tiempos_Headline_Test';
+  font-size: 16px;
+
+
+  color: #000;
+  background-color: transparent;
+
+
+}
+
+
+
+
+
+.booking-heading {
+
+
+  font-family: 'Roboto';
+
+
+  font-size: 1.8em;
+
+
+  font-weight: 400;
+
+
+  font-style: normal;
+
+
+  line-height: 1.6em;
+
+
+  letter-spacing: -0.08em;
+
+
+  color: #000;
+
+
+}
+
+
+
+
+
+.booking_sub_headings {
+
+
+  font-family: 'Roboto';
+
+
+  font-size: 3em;
+
+
+  font-weight: 700;
+
+
+  font-style: normal;
+
+
+  line-height: 1.6em;
+
+
+  letter-spacing: -0.04em;
+
+
+  color: #000;
+
+
+  position: relative;
+
+}
+
+.prodoc{
+  width: 125px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+
+
+
+
+
+.bookingparatext {
+
+
+  font-family: 'Roboto';
+
+
+  font-size: 1.2em;
+
+
+  font-weight: 400;
+
+
+  font-style: normal;
+
+
+  line-height: 1.6em;
+
+
+  letter-spacing: -0.02em;
+
+
+  color: #000;
+
+
+}
+
+
+
+.form-group {
+
+  /*margin-bottom: 15px;
+  background-color: aliceblue;
+  align-content: center;
+  font-size: 10px;
+  padding: 6px 12px;*/
+  background-color: transparent;
+  border-color: #EBF1F1;
+  width: 100%;
+  border-radius: 2px 2px 2px 2px;
+  font-family: "Google Sans", Sans-serif;
+  line-height: 1.6em;
+  letter-spacing: 0.5px;
+  padding: 5px 5px 5px 5px;
+
+  }
+
+.form-control {
+
+  /*margin-bottom: 15px;
+  background-color: aliceblue;
+  align-content: center;
+  font-size: 10px;
+  padding: 6px 12px;*/
+  background-color: transparent;
+  border-color: #000;
+  font-size: 10px;
+
+
+
+}
+
+.bookings_field_input_heading {
+
+
+  font-family: 'Roboto';
+
+
+  font-size: 0.8em;
+
+
+  text-transform: capitalize;
+
+
+  font-weight: 300;
+
+
+  font-style: normal;
+
+
+  line-height: 1.4px;
+
+
+  letter-spacing: -0.08px;
+
+
+  color: #000;
+
+
+
+}
+
+
+
+.bottomfooter{
+
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+ 
+}
+
+
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'libel_suitregular';
+
+
+    src: url('fonts/libel-suit-rg-webfont.woff2') format('woff2'),
+
+
+         url('fonts/libel-suit-rg-webfont.woff') format('woff');
+
+
+    font-weight: normal;
+
+
+    font-style: normal;
+
+
+
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Tiempos_Headline_Test';
+
+
+    src: url('fonts/TiemposHeadlineTest-Medium.woff') format('woff');
+
+
+    font-weight: 500;
+
+
+    font-style: normal;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Tiempos_Headline_Test';
+
+
+    src: url('fonts/TiemposHeadlineTest-RegularItalic.woff') format('woff');
+
+
+    font-weight: normal;
+
+
+    font-style: italic;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Tiempos_Headline_Test';
+
+
+    src: url('fonts/TiemposHeadlineTest-SemiboldItalic.woff') format('woff');
+
+
+    font-weight: 600;
+
+
+    font-style: italic;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Tiempos_Headline_Test';
+
+
+    src: url('fonts/TiemposHeadlineTest-Black.woff') format('woff');
+
+
+    font-weight: 900;
+
+
+    font-style: normal;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Tiempos_Headline_Test';
+
+
+    src: url('fonts/TiemposHeadlineTest-Light.woff') format('woff');
+
+
+    font-weight: 300;
+
+
+    font-style: normal;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Tiempos_Headline_Test';
+
+
+    src: url('fonts/TiemposHeadlineTest-Regular.woff') format('woff');
+
+
+    font-weight: normal;
+
+
+    font-style: normal;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Tiempos_Headline_Test';
+
+
+    src: url('fonts/TiemposHeadlineTest-MediumItalic.woff') format('woff');
+
+
+    font-weight: 500;
+
+
+    font-style: italic;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Tiempos_Headline_Test';
+
+
+    src: url('fonts/TiemposHeadlineTest-BlackItalic.woff') format('woff');
+
+
+    font-weight: 900;
+
+
+    font-style: italic;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Tiempos_Headline_Test';
+
+
+    src: url('fonts/TiemposHeadlineTest-LightItalic.woff') format('woff');
+
+
+    font-weight: 300;
+
+
+    font-style: italic;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Tiempos_Headline_Test';
+
+
+    src: url('fonts/TiemposHeadlineTest-BoldItalic.woff') format('woff');
+
+
+    font-weight: bold;
+
+
+    font-style: italic;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Tiempos_Headline_Test';
+
+
+    src: url('fonts/TiemposHeadlineTest-Semibold.woff') format('woff');
+
+
+    font-weight: 600;
+
+
+    font-style: normal;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Tiempos_Headline_Test';
+
+
+    src: url('fonts/TiemposHeadlineTest-Bold.woff') format('woff');
+
+
+    font-weight: bold;
+
+
+    font-style: normal;
+
+
+}
+
+
+@font-face {
+
+
+    font-family: 'Newzald';
+
+
+        src: url('fonts/NewzaldTest-Black.woff') format('woff'), /* Modern Browsers */
+
+
+
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'SemeOnline';
+
+
+        src: url('fonts/SemeOnline_v6.woff') format('woff'), /* Modern Browsers */
+
+
+
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Google_Sans';
+
+
+    src: url('ProductSans-Regular.woff') format('woff');
+
+
+    font-weight: normal;
+
+
+    font-style: normal;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Google_Sans';
+
+
+    src: url('ProductSans-ThinItalic.woff') format('woff');
+
+
+    font-weight: 100;
+
+
+    font-style: italic;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Google_Sans';
+
+
+    src: url('ProductSans-BlackItalic.woff') format('woff');
+
+
+    font-weight: 900;
+
+
+    font-style: italic;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Google_Sans';
+
+
+    src: url('ProductSans-BoldItalic.woff') format('woff');
+
+
+    font-weight: bold;
+
+
+    font-style: italic;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Google_Sans';
+
+
+    src: url('ProductSans-Black.woff') format('woff');
+
+
+    font-weight: 900;
+
+
+    font-style: normal;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Google_Sans';
+
+
+    src: url('ProductSans-MediumItalic.woff') format('woff');
+
+
+    font-weight: 500;
+
+
+    font-style: italic;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Google_Sans';
+
+
+    src: url('ProductSans-Bold.woff') format('woff');
+
+
+    font-weight: bold;
+
+
+    font-style: normal;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Google_Sans';
+
+
+    src: url('ProductSans-Light.woff') format('woff');
+
+
+    font-weight: 300;
+
+
+    font-style: normal;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Google_Sans';
+
+
+    src: url('ProductSans-Thin.woff') format('woff');
+
+
+    font-weight: 100;
+
+
+    font-style: normal;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Google_Sans';
+
+
+    src: url('ProductSans-LightItalic.woff') format('woff');
+
+
+    font-weight: 300;
+
+
+    font-style: italic;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Google_Sans';
+
+
+    src: url('ProductSans-Italic.woff') format('woff');
+
+
+    font-weight: normal;
+
+
+    font-style: italic;
+
+
+}
+
+
+
+
+
+@font-face {
+
+
+    font-family: 'Google_Sans';
+
+
+    src: url('ProductSans-Medium.woff') format('woff');
+
+
+    font-weight: 500;
+
+
+    font-style: normal;
+
+
+}
+
+
