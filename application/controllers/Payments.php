@@ -16,6 +16,11 @@
 
  * ---------------------------------------------------------------------------- */
 
+
+use \Aws\Sns\SnsClient;
+use \Aws\Exception\AwsException;
+
+
 /**
 
  * Payments Controller
@@ -25,6 +30,7 @@
  * @package Controllers
 
  */
+
 
 class Payments extends CI_Controller {
 
@@ -288,6 +294,7 @@ class Payments extends CI_Controller {
                 // Update payment as complete
 
                 $this->payments_model->update($_POST['m_payment_id'] );
+                $this->send_sms($_POST['custom_str1'], $_POST['custom_str2']);
             }
             // If the transaction was NOT valid
             else
@@ -318,4 +325,30 @@ class Payments extends CI_Controller {
 
     }
 
+
+    public function send_sms($phone_number, $appointment_date) {
+        $SnSclient = new SnsClient([
+            'profile' => 'default',
+            'region' => 'us-east-1',
+            'version' => 'latest',
+            'credentials' => ['key' => 'AKIASIY2HWNAZVVL4Z5U', 'secret' => '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']
+        ]);
+
+        $message = 'You appointment has been booked for '. $appointment_date;
+        $phone = '+27'.$phone_number;
+
+        try {
+            $SnSclient->publish([
+                'Message' => $message,
+                'PhoneNumber' => $phone,
+                'MessageAttributes' => ['AWS.SNS.SMS.SenderID' => [
+                    'DataType' => 'String',
+                    'StringValue' => 'WebScheduler'
+                ]]
+            ]);
+        } catch (AwsException $e) {
+            // output error message if fails
+            error_log($e->getMessage());
+        }
+    }
 }

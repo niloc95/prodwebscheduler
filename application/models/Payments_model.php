@@ -134,6 +134,7 @@ class Payments_Model extends CI_Model {
 
      */
 
+
     public function exists($payment)
 
     {
