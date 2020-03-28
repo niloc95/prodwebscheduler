@@ -61,6 +61,7 @@
     <link rel="icon" sizes="192x192" href="<?= asset_url('assets/img/logo.png') ?>">
 
 
+
 </head>
 
 
@@ -747,7 +748,8 @@
                                     <label for="phone-number" class="control-label, bookings_field_input_heading"><?= lang('phone_number') ?></label>
 
 
-                                    <input type="text" id="phone-number" class="form-control" maxlength="120" />
+                                    <input type="text" id="phone-number" class="form-control" pattern="[0-9]{10}"
+                                           placeholder="Valid South African number e.g 0814106338" title="Valid South African number e.g 0814106338"required />
 
 
                                 </div>
@@ -864,7 +866,8 @@
                                             <label for="mamobile-number" class="control-label, bookings_field_input_heading"><?= lang('ma_mobile_number') ?> *</label>
 
 
-                                            <input type="text" id="mamobile-number" class="required form-control" maxlength="10" />
+                                            <input type="tel" id="mamobile-number" class="required form-control" pattern="[0-9]{10}"
+                                                   placeholder="Valid South African number e.g 0814106338" title="Valid South African cellphone number e.g 0814106338" required />
 
 
                                         </div>
@@ -1086,7 +1089,7 @@
                                     <?php endif ?>
 
 
-                                    
+
                     </div>
 
 
@@ -1223,8 +1226,8 @@
 
 
           </div>
-        
-        
+
+
   <!-- Footer -->
 
 
@@ -1295,7 +1298,7 @@ Made with ❤
             manageMode          : <?= $manage_mode ? 'true' : 'false' ?>,
 
 
-           // customerToken       : <?= json_encode($customer_token) ?>,
+            customerToken       : <?= json_encode($customer_token) ?>,
 
 
             dateFormat          : <?= json_encode($date_format) ?>,
@@ -1307,17 +1310,22 @@ Made with ❤
             displayCookieNotice : <?= json_encode($display_cookie_notice === '1') ?>,
 
 
-           // appointmentData     : <?= json_encode($appointment_data) ?>,
+            appointmentData     : <?= json_encode($appointment_data) ?>,
 
 
-           // providerData        : <?= json_encode($provider_data) ?>,
+            providerData        : <?= json_encode($provider_data) ?>,
 
 
-           // customerData        : <?= json_encode($customer_data) ?>,
+            customerData        : <?= json_encode($customer_data) ?>,
 
 
-            csrfToken           : <?= json_encode($this->security->get_csrf_hash()) ?>
+            csrfToken           : <?= json_encode($this->security->get_csrf_hash()) ?>,
 
+
+            merchantId          : <?= json_encode(Config::MERCHANT_ID) ?>,
+
+
+            merchantKey         : <?= json_encode(Config::MERCHANT_KEY) ?>
 
         };
 
